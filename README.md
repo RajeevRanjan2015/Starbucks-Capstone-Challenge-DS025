@@ -8,8 +8,9 @@ I chose this as my capstone project for Data Scientist Nanodegree offered by Uda
 3. Data set
 4. File/data description
 5. Data preparation
-6. Result
-7. Conclusion
+6. EDA
+7. Result
+8. Conclusion
 
 ## Project Motivation:
 
@@ -77,7 +78,19 @@ There are three datasets provided and each dataset is cleaned and preprocessed f
    Portfolio - renaming id column name to offer_id, one-hot encoding of channels and offer_type columns
    Profile - profile: renaming id column name to customer_id, replacing age value 118 to nan, creating readable date format in became_member_on column, dropping rows with no gender, income, age data, converting gender values to numeric 0s and 1s, adding start year and start month columns (for further analysis)
    Transcript - renaming person column name to customer_id, creating separate columns for amount and offer_id from value col, dropping transaction rows whose customer_id is not in profile:customer_id, converting time in hours to time in days, segregating offer and transaction data, finally dropping duplicates if any
-   
+ 
+ 
+ ## EDA (Exploratory Data Analysis):
+ 
+It is the most important phase of any data science project as we go more deeper into data to understand it better statistically and that helps in making decisions that what should to be followed going further.
+
+#### How many customers were provided with a specific offer?
+     Offer success rate (percent success):
+     
+     []()
+
+ 
+ 
  ## Result:
  
  Results suggest that a random forest model's accuracy and f1-score is better than the naive predictor
