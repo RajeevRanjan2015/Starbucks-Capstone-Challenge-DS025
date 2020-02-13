@@ -6,8 +6,8 @@ I chose this as my capstone project for Data Scientist Nanodegree offered by Uda
 1. Project motivation
 2. Installation 
 3. Data set
-4. Data preparation
-5. File description
+4. File/data description
+5. Data preparation
 6. Result
 7. Conclusion
 
@@ -69,3 +69,31 @@ Here is the schema and explanation of each variable in the files:
     person (str) - customer id
     time (int) - time in hours since start of test. The data begins at time t=0
     value - (dict of strings) - either an offer id or transaction amount depending on the record
+
+## Data Preparation:
+
+There are three datasets provided and each dataset is cleaned and preprocessed for further analysis. The target features for analysis are offer_success, percent_success.
+
+   Portfolio - renaming id column name to offer_id, one-hot encoding of channels and offer_type columns
+   Profile - profile: renaming id column name to customer_id, replacing age value 118 to nan, creating readable date format in became_member_on column, dropping rows with no gender, income, age data, converting gender values to numeric 0s and 1s, adding start year and start month columns (for further analysis)
+   Transcript - renaming person column name to customer_id, creating separate columns for amount and offer_id from value col, dropping transaction rows whose customer_id is not in profile:customer_id, converting time in hours to time in days, segregating offer and transaction data, finally dropping duplicates if any
+   
+ ## Result:
+ 
+ Results suggest that a random forest model's accuracy and f1-score is better than the naive predictor
+ 1. Accuracy
+       Naive predictor: 0.471
+       Random forest: 0.762
+ 2. F1-score
+       Naive predictor: 0.640
+       Random forest: 0.753
+       
+ ## Conclusion:
+ 
+The problem that I chose to solve was to build a model that predicts whether a customer will respond to an offer. My strategy for solving this problem has mainly two steps. First, I combined offer portfolio, customer profile, and transaction data. Second, I assessed the accuracy and F1-score of a naive model that assumes all offers were successful. Third, I compared the performance of logistic regression and random forest models. This analysis suggests that a random forest model has the best training data accuracy and F1-score. Analysis suggests that random forest model has a training data accuracy of 0.762 and an F1-score of 0.753. The test data set accuracy of 0.740 and F1-score of 0.730 suggests that the random forest model I constructed did not overfit the training data.
+
+However, the performance of a random forest model can be still improved by analysing features which impacts an offer’s success rate as a function of offer difficulty, duration, and reward. These additional features should provide a random forest classifier with the opportunity to construct a better decision boundary that separates successful and unsuccessful customer offers.
+
+Also, initially it seemed like we had a lot of data to work, but once NaN values and duplicate columns were dropped and the data were combined into one single dataset, it felt as though the models might have benefited from more data. With more data, the classification models may have been able to produce better accuracy and F1-score results.
+
+Additionally, better predictions may have been deducted if there were more customer metrics. For this analysis, I feel we had limited information about customer available to us — just age, gender, and income. To find optimal customer demographics, it would be nice to have a few more features of a customer. These additional features may aid in providing better classification model results.
