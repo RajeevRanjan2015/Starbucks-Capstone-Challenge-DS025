@@ -81,10 +81,11 @@ There are three datasets provided and each dataset is cleaned and preprocessed f
  ## Result:
  
  Results suggest that a random forest model's accuracy and f1-score is better than the naive predictor
- 1. Accuracy
-       Naive predictor: 0.471
-       Random forest: 0.762
- 2. F1-score
+ 
+    1. Accuracy
+         Naive predictor: 0.471
+         Random forest: 0.762
+    2. F1-score
        Naive predictor: 0.640
        Random forest: 0.753
        
