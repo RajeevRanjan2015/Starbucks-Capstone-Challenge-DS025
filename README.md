@@ -36,7 +36,7 @@ Every offer has a validity period before the offer expires. As an example, a BOG
 
 You'll be given transactional data showing user purchases made on the app including the timestamp of purchase and the amount of money spent on a purchase. This transactional data also has a record for each offer that a user receives as well as a record for when a user actually views the offer. There are also records for when a user completes an offer.
 
-### Data Description:
+## Data Description:
 
 The data is contained in three files:
 
