@@ -87,9 +87,9 @@ It is the most important phase of any data science project as we go more deeper 
 #### How many customers were provided with a specific offer?
      Offer success rate (percent success):
      
-     ![Home page](https://github.com/RajeevRanjan2015/Recommendation-System-Movie-/blob/master/home%20page.PNG)
+     [Homepage](https://github.com/RajeevRanjan2015/Starbucks-Capstone-Challenge-DS025/blob/master/EDA1.PNG)
      
-     ![EDA1](https://github.com/RajeevRanjan2015/Starbucks-Capstone-Challenge-DS025/blob/master/EDA%201.PNG)
+     [EDA1](https://github.com/RajeevRanjan2015/Starbucks-Capstone-Challenge-DS025/blob/master/EDA%201.PNG)
 
  
  
