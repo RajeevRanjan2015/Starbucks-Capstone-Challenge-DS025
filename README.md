@@ -87,13 +87,11 @@ It is the most important phase of any data science project as we go more deeper 
 #### How many customers were provided with a specific offer?
      Offer success rate (percent success):
      
-     <img src="https://github.com/RajeevRanjan2015/Starbucks-Capstone-Challenge-DS025/blob/master/EDA1.PNG">
-   
-     
-     
+![img](https://github.com/RajeevRanjan2015/Starbucks-Capstone-Challenge-DS025/blob/master/EDA1.PNG)    
 
- 
- 
+Detailed EDA is covered in notebook. 
+
+
  ## Result:
  
  Results suggest that a random forest model's accuracy and f1-score is better than the naive predictor
