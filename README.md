@@ -1,6 +1,8 @@
 # Starbucks-Capstone-Challenge-DS025
 
-I chose this as my capstone project for Data Scientist Nanodegree offered by Udacity.
+I chose this as my capstone project for Data Scientist Nanodegree offered by Udacity. Please have a look on my blog as well to have better understanding of the project.
+
+[Project blog post](https://medium.com/@cs.er.rajeev.ranjan/starbucks-capstone-challenge-b5821050a464)
 
 ## Table of Contents:
 1. Project motivation
