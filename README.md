@@ -86,7 +86,7 @@ There are three datasets provided and each dataset is cleaned and preprocessed f
  
 It is the most important phase of any data science project as we go more deeper into data to understand it better statistically and that helps in making decisions that what should to be followed going further.
 
-#### How many customers were provided with a specific offer?
+### How many customers were provided with a specific offer?
      Offer success rate (percent success):
      
 ![img](https://github.com/RajeevRanjan2015/Starbucks-Capstone-Challenge-DS025/blob/master/EDA1.PNG)    
